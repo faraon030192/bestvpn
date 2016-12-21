@@ -1,0 +1,21 @@
+/* TABLE */
+
+$table-speed-bg: #f2f2f2;
+
+.table-speed {
+  >thead {
+    >tr {
+      >td, th {
+        background: $table-speed-bg;
+        border-bottom-width: 1px;
+      }
+    }
+  }
+  >thead, tbody {
+    >tr {
+      >td, th {
+        padding: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+/* LOGO */
+
+.site__logo {
+  display: inline-block;
+  font-size: 38px;
+  font-family: $font-extra-bold-italic;
+  color: $sky;
+  @include transition(200ms);
+  &:hover, &:focus {
+    color: $sky;
+  }
+  @include respond-to(sm) {
+    font-size: 32px;
+  }
+}
+.site__logo__span {
+  color: $white;
+}

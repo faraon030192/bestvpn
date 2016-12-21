@@ -1,0 +1,142 @@
+/* Fonts */
+
+$font-path: '../fonts/';
+
+/* OpenSans */
+@font-face {
+  font-family: 'OpenSans-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}opensans/OpenSans-Light.woff2') format('woff2'),
+       url('#{$font-path}opensans/OpenSans-Light.woff') format('woff'),
+       url('#{$font-path}opensans/OpenSans-Light.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans-LightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}opensans/OpenSans-LightItalic.woff2') format('woff2'),
+       url('#{$font-path}opensans/OpenSans-LightItalic.woff') format('woff'),
+       url('#{$font-path}opensans/OpenSans-LightItalic.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}opensans/OpenSans-Italic.woff2') format('woff2'),
+       url('#{$font-path}opensans/OpenSans-Italic.woff') format('woff'),
+       url('#{$font-path}opensans/OpenSans-Italic.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}opensans/OpenSans-Regular.woff2') format('woff2'),
+       url('#{$font-path}opensans/OpenSans-Regular.woff') format('woff'),
+       url('#{$font-path}opensans/OpenSans-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}opensans/OpenSans-Semibold.woff2') format('woff2'),
+       url('#{$font-path}opensans/OpenSans-Semibold.woff') format('woff'),
+       url('#{$font-path}opensans/OpenSans-Semibold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans-SemiboldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}opensans/OpenSans-SemiboldItalic.woff2') format('woff2'),
+       url('#{$font-path}opensans/OpenSans-SemiboldItalic.woff') format('woff'),
+       url('#{$font-path}opensans/OpenSans-SemiboldItalic.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}opensans/OpenSans-Bold.woff2') format('woff2'),
+       url('#{$font-path}opensans/OpenSans-Bold.woff') format('woff'),
+       url('#{$font-path}opensans/OpenSans-Bold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans-BoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}opensans/OpenSans-BoldItalic.woff2') format('woff2'),
+       url('#{$font-path}opensans/OpenSans-BoldItalic.woff') format('woff'),
+       url('#{$font-path}opensans/OpenSans-BoldItalic.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}opensans/OpenSans-ExtraBold.woff2') format('woff2'),
+       url('#{$font-path}opensans/OpenSans-ExtraBold.woff') format('woff'),
+       url('#{$font-path}opensans/OpenSans-ExtraBold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans-ExtraBoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}opensans/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+       url('#{$font-path}opensans/OpenSans-ExtraBoldItalic.woff') format('woff'),
+       url('#{$font-path}opensans/OpenSans-ExtraBoldItalic.ttf') format('ttf');
+}
+
+/* Fontello */
+@font-face {
+  font-family: 'fontello';
+  src: url('#{$font-path}fontello/fontello.eot?95610120');
+  src: url('#{$font-path}fontello/fontello.eot?95610120#iefix') format('embedded-opentype'),
+       url('#{$font-path}fontello/fontello.woff2?95610120') format('woff2'),
+       url('#{$font-path}fontello/fontello.woff?95610120') format('woff'),
+       url('#{$font-path}fontello/fontello.ttf?95610120') format('truetype'),
+       url('#{$font-path}fontello/fontello.svg?95610120#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+ [class^="bestvpn-icon-"]:before, [class*=" bestvpn-icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.bestvpn-icon-star:before { content: '\e800'; } /* '' */
+.bestvpn-icon-down:before { content: '\e801'; } /* '' */
+.bestvpn-icon-left:before { content: '\e802'; } /* '' */
+.bestvpn-icon-right:before { content: '\e803'; } /* '' */
+.bestvpn-icon-up:before { content: '\e804'; } /* '' */
+.bestvpn-icon-android:before { content: '\e805'; } /* '' */
+.bestvpn-icon-cancel:before { content: '\e806'; } /* '' */
+.bestvpn-icon-star-empty:before { content: '\e807'; } /* '' */
+.bestvpn-icon-check-ok:before { content: '\e808'; } /* '' */
+.bestvpn-icon-cup:before { content: '\e809'; } /* '' */
+.bestvpn-icon-twitter:before { content: '\f099'; } /* '' */
+.bestvpn-icon-menu:before { content: '\f0c9'; } /* '' */
+.bestvpn-icon-gplus:before { content: '\f0d5'; } /* '' */
+.bestvpn-icon-angle-double-left:before { content: '\f100'; } /* '' */
+.bestvpn-icon-angle-double-right:before { content: '\f101'; } /* '' */
+.bestvpn-icon-angle-double-up:before { content: '\f102'; } /* '' */
+.bestvpn-icon-angle-double-down:before { content: '\f103'; } /* '' */
+.bestvpn-icon-star-half-alt:before { content: '\f123'; } /* '' */
+.bestvpn-icon-ok-squared:before { content: '\f14a'; } /* '' */
+.bestvpn-icon-apple:before { content: '\f179'; } /* '' */
+.bestvpn-icon-windows:before { content: '\f17a'; } /* '' */
+.bestvpn-icon-linux:before { content: '\f17c'; } /* '' */
+.bestvpn-icon-facebook-squared:before { content: '\f308'; } /* '' */
+.bestvpn-icon-instagram:before { content: '\f32d'; } /* '' */

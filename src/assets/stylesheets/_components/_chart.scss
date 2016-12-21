@@ -1,0 +1,63 @@
+/* CHART */
+
+.chart-holder{}
+
+.chart-heading {
+  margin-bottom: 20px;
+  @extend .flex, .flex-between, .flex-item-center;
+  @include respond-to(xs) {
+    display: block;
+    text-align: center;
+  }
+}
+.chart-heading__item {
+  @include respond-to(xs) {
+    &+.chart-heading__item {
+      margin-top: 20px;
+    }
+  }
+}
+.chart-heading__title {
+  color: $white;
+  font-family: $font-light;
+  font-size: 30px;
+  text-transform: uppercase;
+  @include respond-to(xs) {
+    font-size: 26px;
+  }
+}
+
+.chart-filtering {
+  position: relative;
+  label {
+    color: $white;
+    font-size: 20px;
+    font-family: $font-light;
+    margin-right: 15px;
+    margin-bottom: 0;
+    @include respond-to(xs) {
+      font-size: 16px;
+    }
+  }
+  .form-group {
+    @extend .flex, .flex-item-center;
+  }
+  .form-control {
+    @include respond-to(xs-min) {
+      min-width: 160px;
+    }
+  }
+}
+
+/* .chart-filtering--has-arrow {
+  &:after {
+    content: '';
+    display: block;
+    width: 136px;
+    height: 86px;
+    background: url(../images/temp/filter.png) no-repeat 50% 50% / cover;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+} */

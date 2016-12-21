@@ -1,0 +1,23 @@
+/* ASIDE */
+
+$aside-bg: #f2f2f2;
+
+.aside__item {
+  background: $aside-bg;
+  padding: 30px 15px;
+  @include respond-to(xs) {
+    padding: 25px 15px;
+  }
+  &+.aside__item {
+    margin-top: 30px;
+    @include respond-to(xs) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.aside__card-item {
+  &+.aside__card-item {
+    margin-top: 15px;
+  }
+}

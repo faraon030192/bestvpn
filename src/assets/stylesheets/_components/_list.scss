@@ -1,0 +1,173 @@
+/* LIST */
+
+$list-social-color: $blue-bayoux-soft;
+.list-social {
+  @extend .list-unstyled, .flex, .flex-item-center;
+}
+.list-social__item {
+  display: inline-block;
+  &+.list-social__item {
+    margin-left: 15px;
+  }
+}
+.list-social__link {
+  color: $list-social-color;
+  width: 45px;
+  height: 45px;
+  border: 2px solid $list-social-color;
+  @extend .flex, .flex-content-center, .flex-item-center;
+  border-radius: 50%;
+  @include respond-to(xs) {
+    width: 34px;
+    height: 34px;
+    border-width: 1px;
+  }
+  &:hover, &:focus {
+    color: $sky;
+    border-color: $sky;
+  }
+}
+.list-social__icon {
+  font-size: 20px;
+  @include respond-to(xs) {
+    font-size: 16px;
+  }
+}
+
+$list-check-color: $mine-shaft-soft;
+.list-check {
+  @extend .list-unstyled;
+}
+.list-check__item {
+  color: $list-check-color;
+  font-size: 13px;
+  @include respond-to(xs-min) {
+    @include text-overflow;
+  }
+  @include respond-to(md) {
+    font-size: 12px;
+  }
+  &:before {
+    margin-right: 8px;
+    font-family: $font-icons;
+    content: '\f14a';
+  }
+}
+
+$list-check-color: $info;
+.list-ok {
+  @extend .list-unstyled;
+}
+.list-ok__item {
+  font-size: 13px;
+  @include respond-to(xs-min) {
+    @include text-overflow;
+  }
+  @include respond-to(md) {
+    font-size: 12px;
+  }
+  &+.list-ok__item {
+    margin-top: 5px;
+  }
+  &:before {
+    color: $list-check-color;
+    margin-right: 8px;
+    font-family: $font-icons;
+    content: '\e808';
+  }
+}
+
+.list-logos {
+  @extend .list-unstyled, .flex-inline, .flex-wrap;
+  width: 114px;
+}
+.list-logos__item {
+  flex-basis: 36px;
+  height: 36px;
+  margin-bottom: 3px;
+  margin-right: 3px;
+  &:nth-child(3) {
+    margin-right: 0;;
+  }
+  &:nth-child(6) {
+    margin-right: 0;;
+  }
+  &.list-logo__item--not-available {
+    opacity: .1;
+  }
+}
+.list-logos__img {
+  width: 36px;
+  height: 36px;
+}
+
+
+.list-best-vpn {
+  @extend .list-unstyled;
+}
+.list-best-vpn__item {
+  border-top: 1px solid $mercury;
+  &:last-child {
+    border-bottom: 1px solid $mercury;
+  }
+  &:first-child {
+    @include respond-to(xs) {
+      border-top: none;
+    }
+  }
+}
+.list-best-vpn__link {
+  display: block;
+  padding: 15px 15px 15px 50px;
+  color: #196cb1;
+  background-repeat: no-repeat;
+  background-position: 0px 15px;
+  &:hover, &:focus {
+    color: darken($info, 10%);
+  }
+  &.for-windows {
+    background-image: url('../images/temp/ico_4windows.png');
+  }
+  &.for-linux {
+    background-image: url('../images/temp/ico_4linux.png');
+  }
+  &.for-mac {
+    background-image: url('../images/temp/ico_4mac.png');
+  }
+  &.for-android {
+    background-image: url('../images/temp/ico_4android.png');
+  }
+  &.for-ios {
+    background-image: url('../images/temp/ico_4ios.png');
+  }
+  &.for-netflix {
+    background-image: url('../images/temp/ico_4netflix.png');
+  }
+  &.for-hulu {
+    background-image: url('../images/temp/ico_4netflix.png');
+  }
+  &.for-youtube {
+    background-image: url('../images/temp/ico_4youtube.png');
+  }
+  &.for-fb {
+    background-image: url('../images/temp/ico_4facebook.png');
+  }
+  &.for-tw {
+    background-image: url('../images/temp/ico_4twitter.png');
+  }
+  &.for-uk {
+    background-image: url('../images/temp/ico_4uk.png');
+  }
+  &.for-usa {
+    background-image: url('../images/temp/ico_4usa.png');
+  }
+  &.for-australia {
+    background-image: url('../images/temp/ico_4australia.png');
+  }
+  &.for-canada {
+    background-image: url('../images/temp/ico_4canada.png');
+  }
+  &.for-china {
+    background-image: url('../images/temp/ico_4china.png');
+  }
+}

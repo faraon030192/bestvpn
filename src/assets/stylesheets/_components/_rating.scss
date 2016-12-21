@@ -1,0 +1,24 @@
+/* RATING */
+
+$rating-color: $saffron;
+
+.list-rating {
+	@extend .list-unstyled;
+}
+.list-rating__item {
+	font-family: $font-icons;
+	display: inline-block;
+	color: $rating-color;
+	&+.list-rating__item {
+		margin-left: 3px;
+	}
+}
+.list-rating__item--full {
+	@extend .bestvpn-icon-star;
+}
+.list-rating__item--empty {
+	@extend .bestvpn-icon-star-empty;
+}
+.list-rating__item--half {
+	@extend .bestvpn-icon-star-half-alt;
+}
