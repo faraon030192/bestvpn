@@ -1,0 +1,148 @@
+/* PRICE */
+
+$price-border-color: $mercury;
+$price-bg: $mutted;
+
+.price {
+  @extend .flex, .flex-item-center, .flex-content-center;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+    @include respond-to(xs) {
+      margin-bottom: 25px;
+    }
+  }
+  @include respond-to(sm) {
+    display: block;
+  }
+}
+
+.price__item {
+  border: 1px solid $price-border-color;
+  position: relative;
+  box-shadow: 0px 20px 15px 0px rgba($black, .1);
+  flex: 0 1 100%;
+  &.price__item {
+    margin-left: 20px;
+    @include respond-to(sm) {
+      margin-left: 0px;
+      margin-top: 50px;
+    }
+  }
+}
+.price__item--pro {
+  @include respond-to(sm-min) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+.price__heading {
+  padding: 40px;
+  @include respond-to(sm) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.price__item-logo {
+  max-width: 145px;
+  @include respond-to(sm) {
+    max-width: 120px;
+  }
+}
+
+.price-label {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  padding: 2.5px 15px;
+  text-align: center;
+  z-index: 1;
+  @include respond-to(sm) {
+    right: 5px;
+  }
+  &:before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -38px;
+    right: -10px;
+    @include respond-to(sm) {
+      right: -16px;
+    }
+  }
+}
+.price-label--blue {
+  &:before {
+    background-image: url(../images/temp/price-label-blue.png);
+  }
+}
+.price-label--red {
+  &:before {
+    background-image: url(../images/temp/price-label-red.png);
+  }
+}
+.price-label__title {
+  color: $white;
+  font-size: 30px;
+  text-shadow: 0px 2px 2px rgba($black, .65);
+  font-family: $font-semibold;
+  @include respond-to(sm) {
+    font-size: 26px;
+  }
+  small {
+    display: block;
+    font-size: 22px;
+    @include respond-to(sm) {
+      font-size: 18px;
+    }
+  }
+}
+
+.price__subscription {
+  padding: 30px 15px;
+  background: $price-bg;
+  text-align: center;
+  @include respond-to(sm) {
+    padding: 20px 15px;
+  }
+}
+.price__subscription__title {
+  color: $primary;
+  font-size: 32px;
+  font-family: $font-extra-bold;
+  margin-bottom: 0px;
+  line-height: 110%;
+  @include respond-to(sm) {
+    font-size: 26px;
+  }
+}
+.price__subscription__subtitle {
+  color: $info;
+  font-size: 26px;
+  font-family: $font-bold;
+  @include respond-to(sm) {
+    font-size: 22px;
+  }
+}
+
+.price__body {
+  padding: 35px 30px;
+  @include respond-to(sm) {
+    padding: 20px 15px;
+  }
+  .list-check {
+    line-height: 26px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+      @include respond-to(sm) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

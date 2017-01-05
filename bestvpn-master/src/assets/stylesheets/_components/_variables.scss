@@ -1,0 +1,103 @@
+/* VARIABLES */
+
+/*************************
+	Local color variables
+*************************/
+/* For color names was used site - http://chir.ag/projects/name-that-color */
+/* White group */
+$white: #ffffff;
+/* Black group */
+$black: #000000;
+$mine-shaft: #272727; //Body text color
+$mine-shaft-soft: #353535;
+/* Gray group */
+$alabaster-light: #fafafa;
+$alabaster: #f8f8f8; //Mutted bg
+$mercury: #e5e5e5; //Border color
+$wild-sand: #f7f6f6;
+$boulder: #7a7a7a;
+$pale-sky: #65717e;
+$vasala: #3f3b3b;
+/* Blue group */
+$picton-blue: #48acea; //Info color
+$havelock-blue: #4391d2; //Footer link hover color
+$cerulean: #0b8bd5; //Sky color
+$cerulean-blue: #3561c6; //Link color
+$blue-bayoux: #435f7b; //Footer secondary color
+$blue-bayoux-soft: #445f7b;
+$green-vogue: #042b59; //Primary color
+$nile-blue: #19334e; //Footer bg
+$firefly: #0f2134;
+/* Yellow group */
+$tulip-tree: #eda539; //Warning color
+$saffron: #f4ab3c;
+/* Reg group */
+$crimson: #df1111; //Danger color
+/* Green group */
+$apple: #55a83e;
+
+/*************************
+	Global color variables
+*************************/
+$main-color: $mine-shaft;
+$border: $mercury;
+
+$mutter-light: $alabaster-light;
+$mutted: $alabaster;
+$gray-thin: $vasala;
+$gray: $boulder;
+$gray-sky: $pale-sky;
+$info: $picton-blue;
+$sky: $cerulean;
+$primary: $green-vogue;
+$primary-soft: $firefly;
+$warning: $tulip-tree;
+$danger: $crimson;
+$success: $apple;
+
+/*************************
+	Fonts variable
+*************************/
+$font-base: 'OpenSans-Regular';
+
+$font-light: 'OpenSans-Light';
+$font-light-italic: 'OpenSans-LightItalic';
+$font-italic: 'OpenSans-Italic';
+$font-regular: 'OpenSans-Regular';
+$font-semibold: 'OpenSans-Semibold';
+$font-semibold-italic: 'OpenSans-SemiboldItalic';
+$font-bold: 'OpenSans-Bold';
+$font-bold-italic: 'OpenSans-BoldItalic';
+$font-extra-bold: 'OpenSans-ExtraBold';
+$font-extra-bold-italic: 'OpenSans-ExtraBoldItalic';
+
+$font-icons: 'fontello';
+
+/*************************
+	Body variables
+*************************/
+$body-font-family: $font-base;
+$body-font-size: 15px;
+$body-line-height: 1.6;
+$body-main-color: $main-color;
+
+/*************************
+	Titles variables
+*************************/
+$title-font-family: $font-extra-bold;
+$title-color: $primary;
+$title-line-height: 1.25;
+
+
+/*************************
+	Links color variables
+*************************/
+$link-color: $cerulean-blue;
+
+/*************************
+	Font size variables
+*************************/
+$fs-md: 16px;
+$fs-sm: 14px;
+$fs-xs: 12px;
+$fs-mini: 10px;

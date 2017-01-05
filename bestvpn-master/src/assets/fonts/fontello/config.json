@@ -1,0 +1,170 @@
+{
+  "name": "",
+  "css_prefix_text": "bestvpn-icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "559647a6f430b3aeadbecd67194451dd",
+      "css": "menu",
+      "code": 61641,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1400d5103edd2fa6d2d61688fee79a5a",
+      "css": "ok-squared",
+      "code": 61770,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "474656633f79ea2f1dad59ff63f6bf07",
+      "css": "star",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3838a5aba604532d2dbae5904615ea39",
+      "css": "down",
+      "code": 59393,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "c21d309f797d3644dc8d28c4617738ce",
+      "css": "left",
+      "code": 59394,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "1d35198f5190ec004dd4ec742fbe19ca",
+      "css": "right",
+      "code": 59395,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "040e72500c863813088c9f9c9415f8e9",
+      "css": "up",
+      "code": 59396,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 61593,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4743b088aa95d6f3b6b990e770d3b647",
+      "css": "facebook-squared",
+      "code": 62216,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0fbfb1cd7a847c88ea4c141d0e1bbdb5",
+      "css": "instagram",
+      "code": 62253,
+      "src": "entypo"
+    },
+    {
+      "uid": "b8d0c7d76e87b94882329a88e8e43d3d",
+      "css": "gplus",
+      "code": 61653,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8aff323697468c4a63993cde00386ec6",
+      "css": "windows",
+      "code": 61818,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e9fa538fd5913046497ac148e27cd8ea",
+      "css": "apple",
+      "code": 61817,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "aaf371ab44841e9aaffebd179d324ce4",
+      "css": "android",
+      "code": 59397,
+      "src": "zocial"
+    },
+    {
+      "uid": "47a35af762c8e06f3d152750134c8750",
+      "css": "linux",
+      "code": 61820,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "rrhco7mfj6ro9yzhe4a1rbln9flw47re",
+      "css": "cancel",
+      "code": 59398,
+      "src": "modernpics"
+    },
+    {
+      "uid": "d17030afaecc1e1c22349b99f3c4992a",
+      "css": "star-empty",
+      "code": 59399,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "745f12abe1472d14f8f658de7e5aba66",
+      "css": "angle-double-left",
+      "code": 61696,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fdfbd1fcbd4cb229716a810801a5f207",
+      "css": "angle-double-right",
+      "code": 61697,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "63b3012c8cbe3654ba5bea598235aa3a",
+      "css": "angle-double-up",
+      "code": 61698,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "dfec4ffa849d8594c2e4b86f6320b8a6",
+      "css": "angle-double-down",
+      "code": 61699,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "84cf1fcc3fec556e7eaeb19679ca2dc9",
+      "css": "star-half-alt",
+      "code": 61731,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "19661dbcb8c80f67d9240e0c858c8008",
+      "css": "check-ok",
+      "code": 59400,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M972.1 0C833.2 52.8 330.4 780.6 330.4 780.6L153 494.3 0 586.3 269.3 1000H388.7C388.7 1000 797.6 421 972.1 277.8V0Z",
+        "width": 972
+      },
+      "search": [
+        "check-ok"
+      ]
+    },
+    {
+      "uid": "d2877a80efc11de72d531e5db34db929",
+      "css": "cup",
+      "code": 59401,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M399.8 644.1H510.8V814.5H399.8V644.1ZM322.1 799.6H588.6V888.2H322.1V799.6ZM333.2 566.4H577.5V655H333.2V566.4ZM277.6 877.3H633V1000H277.6V877.3ZM111.1 0H799.6C799.6 0 771.7 362.1 666.2 497.9 560.8 633.6 349.9 633.6 244.4 497.9 138.9 362.1 111.1 0 111.1 0ZM22.2 133.3H888.4V211H22.2V133.3ZM908 133.3H841.4C841.4 133.3 813 335.6 743 428.6 673 521.7 606.7 486.8 606.7 486.8L577.5 555.3C577.5 555.3 687.4 599.6 785.9 475.7 884.4 351.8 908 133.3 908 133.3ZM0 133.3H66.6C66.6 133.3 95.1 335.6 165 428.6 235 521.7 301.4 486.8 301.4 486.8L330.6 555.3C330.6 555.3 220.7 599.6 122.2 475.7 23.7 351.8 0 133.3 0 133.3Z",
+        "width": 908
+      },
+      "search": [
+        "cup"
+      ]
+    }
+  ]
+}
