@@ -13,7 +13,6 @@
             "type": "serial",
             "categoryField": "category",
             "maxSelectedSeries": 10,
-            "mouseWheelScrollEnabled": true,
             "synchronizeGrid": true,
             "autoMarginOffset": 0,
             "marginBottom": 0,
@@ -43,7 +42,7 @@
             "handDrawScatter": 0,
             "handDrawThickness": 0,
             "hideBalloonTime": 120,
-            "pathToImages": "./img",
+            "pathToImages": "",
             "categoryAxis": {
                 "autoRotateAngle": 0,
                 "autoRotateCount": 0,
@@ -82,7 +81,7 @@
                     "tabIndex": -10,
                     "title": "graph 1",
                     "type": "step",
-                    "valueField": "column-1"
+                    "valueField": "speed"
                 },
                 {
                     "balloonText": "VISIT WEBSITE",
@@ -114,13 +113,13 @@
                     "topRadius": 0,
                     "urlTarget": "",
                     "urlField": "url",
-                    "valueField": "column-1",
+                    "valueField": "speed",
                     "visibleInLegend": false
                 },
                 {
-                    "alphaField": "column-1",
+                    "alphaField": "speed",
                     "balloonText": "",
-                    "fillAlphas": 0.84,
+                    "fillAlphas": 0.9,
                     "fillColors": "#12283E",
                     "id": "AmGraph-4",
                     "minDistance": 0,
@@ -131,7 +130,7 @@
                     "tabIndex": 100,
                     "title": "graph 4",
                     "type": "smoothedLine",
-                    "valueField": "column-1"
+                    "valueField": "speed"
                 },
                 {
                     "balloonColor": "#FFFFFF",
@@ -148,7 +147,7 @@
                     "tabIndex": -10,
                     "title": "graph 5",
                     "type": "column",
-                    "valueField": "column-1",
+                    "valueField": "speed",
                     "visibleInLegend": false
                 }
             ],
@@ -186,7 +185,7 @@
                 "fadeOutDuration": 0.34,
                 "fillAlpha": 1,
                 "fillColor": "#F4AB3C",
-                "fixedPosition": false,
+                "fixedPosition": true,
                 "fontSize": 16,
                 "horizontalPadding": 20,
                 "maxWidth": 120,
@@ -198,78 +197,24 @@
             },
             "titles": [],
             "dataProvider": [
+                <?php
+                $current = 0;
+                $args = array( 'post_type' => 'bv_chart_posts', 'posts_per_page' => 10 );
+                $loop = new WP_Query( $args );
+
+                while ( $loop->have_posts() ) : $loop->the_post();
+                ?>
                 {
-                    "category": "10",
-                    "column-1": "18",
-                    "brand": "IPVANISH",
-                    "img-bullet": "<?php echo get_template_directory_uri() ?>/img/temp/mini-brand-10.png",
-                    "url": "http://www.ipvanish.com"
-                },
-                {
-                    "category": "9",
-                    "column-1": "24",
-                    "brand": "HIDEME",
-                    "img-bullet": "<?php echo get_template_directory_uri() ?>/img/temp/mini-brand-9.png",
-                    "url": "http://www.hide.me"
-                },
-                {
-                    "category": "8",
-                    "column-1": "30",
-                    "brand": "VYPRVPN",
-                    "img-bullet": "<?php echo get_template_directory_uri() ?>/img/temp/mini-brand-8.png",
-                    "url": "http://www.vyprvpn.com"
-                },
-                {
-                    "category": "7",
-                    "column-1": "35",
-                    "brand": "SAFERVPN",
-                    "img-bullet": "<?php echo get_template_directory_uri() ?>/img/temp/mini-brand-7.png",
-                    "url": "http://www.safervpn.com"
-                },
-                {
-                    "category": "6",
-                    "column-1": "42",
-                    "brand": "HOTSPOT",
-                    "img-bullet": "<?php echo get_template_directory_uri() ?>/img/temp/mini-brand-6.png",
-                    "url": "http://www.hotspotshield.com"
-                },
-                {
-                    "category": "5",
-                    "column-1": "49",
-                    "brand": "STRONGVPN",
-                    "img-bullet": "<?php echo get_template_directory_uri() ?>/img/temp/mini-brand-5.png",
-                    "url": "http://www.strongvpn.com"
-                },
-                {
-                    "category": "4",
-                    "column-1": "56",
-                    "brand": "PUREVPN",
-                    "img-bullet": "<?php echo get_template_directory_uri() ?>/img/temp/mini-brand-4.png",
-                    "url": "http://www.purevpn.com"
-                },
-                {
-                    "category": "3",
-                    "column-1": "80",
-                    "brand": "HIDEMYASS",
-                    "img-bullet": "<?php echo get_template_directory_uri() ?>/img/temp/mini-brand-3.png",
-                    "url": "http://www.hidemyass.com"
-                },
-                {
-                    "category": "2",
-                    "column-1": "90",
-                    "brand": "NORDVPN",
-                    "img-bullet": "<?php echo get_template_directory_uri() ?>/img/temp/mini-brand-2.png",
-                    "url": "http://www.nordvpn.com"
-                },
-                {
-                    "category": "1",
-                    "column-1": "100",
-                    "brand": "EXPRESSVPN",
-                    "img-bullet": "<?php echo get_template_directory_uri() ?>/img/temp/mini-brand-1.png",
-                    "url": "http://www.expressvpn.com"
-                }
+                    "category": "<?php echo (10 - $current)?>",
+                    "speed": "<?php the_field('speed') ?>",
+                    "brand": "<?php echo get_the_title(get_post()) ?>",
+                    "img-bullet": "<?php the_field('logo_of_brand') ?>",
+                    "url": "<?php the_field('url') ?>"
+                }<?php $current++; if($current < 10) { echo ','; } ?>
+
+                <? endwhile;?>
             ]
         }
     );
 </script>
-<div id="chartdiv" style="width: 100%; height: 600px; background-color: rgba(18, 40, 62, 0.4);" ></div>
+<div id="chartdiv" style="width: 100%; height: 550px; background-color: rgba(18, 40, 62, 0.5);" ></div>

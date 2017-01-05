@@ -481,3 +481,19 @@ function create_post_type() {
         )
     );
 }
+/*-------------------------------*\
+    Custom Posts
+\---------------------------------*/
+add_action( 'init', 'create_post_chart_type' );
+function create_post_chart_type() {
+    register_post_type( 'bv_chart_posts',
+        array(
+            'labels' => array(
+                'name' => __( 'Chart Posts' ),
+                'singular_name' => __( 'Chart Post' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+        )
+    );
+}
